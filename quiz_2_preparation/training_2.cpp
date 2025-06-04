@@ -249,8 +249,8 @@ void exit_program(node *root)
         return;
     }
     exit_program(root->left);
-    free(root);
     exit_program(root->right);
+    free(root);
 }
 
 void menu_list()
